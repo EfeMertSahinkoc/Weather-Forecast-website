@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.weatherApp {
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(130px);
+    -webkit-backdrop-filter: blur(130px);
+    -webkit-backdrop-filter: saturate(50%);
+    backdrop-filter: saturate(50%);
+    border-radius: 100px;
+    box-shadow: 0px 0px 20px -10px black;
+}
+
+.data {
+
+    width: 100%;
+    margin-right: 30px;
+}
+
+.chartCont {
+    width: 100%;
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(136, 179, 231, 0.371);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(136, 179, 231, 0.73);
+}
+
+.cityData {
+    background-color: rgba(136, 179, 231, 1);
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px -10px black;
+    padding: 15px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+body {
+    background: linear-gradient(-45deg, #3974ff, #ffffff, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+table,
+td,
+th,
+tr {
+    border-collapse: separate !important;
+    border-radius: 30px;
+}
+
+td {
+    width: 50%;
+    text-align: center;
+    height: 50px;
+    border-collapse: separate !important;
+    margin: 10px;
+}
+
+tr {
+    border-collapse: separate !important;
+}
+
+hr {
+    width: 100%;
+    margin: 2px;
+    height: 2px;
+    border: none;
+}
